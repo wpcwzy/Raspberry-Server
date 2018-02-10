@@ -5,8 +5,13 @@ import time
 port=serial.Serial("/dev/ttyAMA0",9600)
 
 print("Serial Inited")
-while(1):
-    source=port.read()
-    print source
-    if source=="!":
-        port.write("~")
+
+def personDetect():
+    while(1):
+        source=port.read()
+        print source
+        if source=="!":
+            port.write("~")
+
+if __name=="__main__":
+    personDetect()
