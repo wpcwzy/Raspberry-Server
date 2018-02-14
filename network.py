@@ -4,7 +4,7 @@ import serial
 
 port=serial.Serial("/dev/ttyAMA0",9600)
 
-print("Serial Inited")
+print "Serial Inited"
 
 def scan():
     while(1):

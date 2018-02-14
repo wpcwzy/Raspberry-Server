@@ -4,7 +4,7 @@ import time
 
 port=serial.Serial("/dev/ttyAMA0",9600)
 
-print("Serial Inited")
+print "Serial Inited"
 
 def personDetect():
     while(1):
